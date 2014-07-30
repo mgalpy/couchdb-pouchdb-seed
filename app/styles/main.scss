@@ -1,0 +1,188 @@
+// bower:scss
+// endbower
+
+html {
+	width: 100;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	width: 100;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#indexContent {
+	width: 100%;
+	height: 100%;
+}
+
+#leftBar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 70px;
+	height: 100%;
+	padding: 15px;
+	background: #384047;
+	z-index: 1000;
+	
+	ul {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		list-style: none;
+		
+		li {
+			margin-bottom: 20px;
+			
+			span {
+				font-size: 35px;
+				color: white;
+				
+				&:hover {
+					color: #428BCA;
+				}
+			}
+			
+			&.active span {
+				color: #428BCA;
+			}
+		}
+		
+		li:last-child {
+			position: absolute;
+			bottom: 0;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+#mainContent {
+	width: 100%;
+	height: 100%;
+	padding: 0 0 0 70px;
+	
+	.container {
+		margin-top: 20px;
+	}
+	
+	#homeSection {
+		height: 100%;
+	}
+	
+	#configSection {
+		height: 100%;
+		
+		#hostSelector {
+			.btn {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+			
+			.progress {
+				height: 10px;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+		}
+		
+		#albumList {
+			ul {
+				list-style: none;
+				padding: 0;
+				
+				hr {
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+				
+				ul li {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	#mapSection {
+		height: 100%;
+		
+		.map-canvas {
+			height: 100%;
+		}
+	}
+
+	#timelineSection {
+		height: 100%;
+		background-color: rgba(255, 127, 0, 0.6);
+		background-image: url("http://web-features.net/patterns/21.png");
+
+		.timelineHeader {
+			text-align: center;
+			color: #384047;
+		
+			img {
+				margin: 25px auto 0px;
+				display: block;
+			}
+		}
+		
+		.timelineYear {
+			position: fixed;
+			top: 40%;
+			left: -50%;
+			margin: 0 auto;
+			font-size: 200px;
+			font-weight: 800px;
+			color: #384047;
+		}
+		
+		.timelineMedia {
+			position: absolute;
+			padding: 10px;
+			background-color: #483D8B;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+
+			p {
+				width: 100%;
+				margin: 0 0 5px;
+				text-align: center;
+				color: #FFF;
+				font-weight: 800;
+			}
+			
+			img {
+			}
+		}
+	}
+
+	#wordsSection {
+		height: 80%;
+		
+		na-d3-words {
+			display: block;
+			height: 100%;
+			
+			text {
+				cursor: pointer;
+			}
+		}
+		
+		textarea {
+			display: block;
+			width: 90%;
+			height: 100px;
+			padding: 10px;
+			margin: 10px auto;
+		}
+	}
+	
+	#statsSection {
+		height: 100%;
+	}
+}

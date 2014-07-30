@@ -1,0 +1,24 @@
+application: asanin-demo
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /(favicon\.ico)
+  static_files: \1
+  upload: favicon\.ico
+  
+- url: /(robots\.txt)
+  static_files: \1
+  upload: robots\.txt
+  
+- url: /(.*\.(html|css|js|json)$)
+  static_files: \1
+  upload: (.*\.(html|css|js|json)$)
+
+- url: /images
+  static_dir: images
+  
+- url: /.*
+  static_files: index.html
+  upload: index.html
