@@ -1,5 +1,5 @@
-/.idea
-/.sass-cache
-/.tmp
+#/.idea
+#/.sass-cache
+#/.tmp
 #/app/lib/auto
-/node_modules
+#/node_modules
