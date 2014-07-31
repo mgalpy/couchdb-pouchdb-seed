@@ -1,26 +1,20 @@
 {
-  "name": "noalbums",
-  "version": "0.0.0",
-  "dependencies": {
-    "angular": "1.2.15",
-    "json3": "~3.2.6",
-    "es5-shim": "~2.1.0",
-    "angular-resource": "1.2.15",
-    "angular-cookies": "1.2.15",
-    "angular-sanitize": "1.2.15",
-    "angular-bootstrap": "~0.11.0",
-    "karma-jasmine": "~0.2.2",
-    "angular-animate": "~1.2.16",
-    "angular-toastr": "~0.2.4",
-    "catiline": "~2.9.3",
-    "angular-ui-router": "~0.2.10",
-    "angular-ui-map": "~0.5.0"
-  },
-  "devDependencies": {
-    "angular-mocks": "1.2.15",
-    "angular-scenario": "1.2.15"
-  },
-  "resolutions": {
-    "angular": ">=1"
-  }
+    "name": "TODO",
+    "private": true,
+    "dependencies": {
+        "angular": "*",
+        "angular-animate": "*",
+        "angular-bootstrap": "*",
+        "angular-cookies": "*",
+        "angular-resource": "*",
+        "angular-sanitize": "*",
+        "angular-toastr": "*",
+        "angular-ui-router": "*",
+        "catiline": "*",
+        "karma-jasmine": "*"
+    },
+    "devDependencies": {
+        "angular-mocks": "*",
+        "angular-scenario": "*"
+    }
 }

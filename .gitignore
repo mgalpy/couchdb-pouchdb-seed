@@ -1,5 +1,8 @@
-#/.idea
-#/.sass-cache
-#/.tmp
-#/app/lib/auto
-#/node_modules
+/.idea
+/.sass-cache
+/.tmp
+/app/lib/auto
+/app/scripts/logic/**/*.js
+/app/scripts/logic/**/*.js.map
+/app/styles/**/*.css
+/node_modules

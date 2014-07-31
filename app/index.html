@@ -1,120 +1,73 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html>
 <head>
-<meta charset="utf-8">
-<title>NoAlbums</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width">
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta charset="utf-8">
+    <title>Main Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-<link rel="stylesheet"
-	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-<link
-	href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,800'
-	rel='stylesheet' type='text/css'>
+    <!-- cdn stylesheets -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,800'>
 
-<!-- build:css styles/vendor.css -->
-<!-- bower:css -->
-<link rel="stylesheet" href="lib/auto/angular-toastr/dist/angular-toastr.css" />
-<!-- endbower -->
-<!-- endbuild -->
-<!-- build:css({.tmp,app}) styles/main.css -->
-<link rel="stylesheet" href="styles/main.css">
-<!-- endbuild -->
+    <!-- all stylesheets here are merged into vendor.css -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="lib/auto/angular-toastr/dist/angular-toastr.css" />
+    <!-- endbower -->
+    <!--<link rel="stylesheet" href="lib/manual/sample/sample.css"/>-->
+    <!--<link rel="stylesheet" href="lib/modified/sample/sample.css"/>-->
+    <!-- endbuild -->
+
+    <!-- all stylesheets here are merged into main.css -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 </head>
+
 <body ng-app="noalbumsApp">
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<!-- main view -->
+<div id="indexContent" ui-view=""></div>
 
-	<!-- Add your site or application content here -->
-	<div id="indexContent" ui-view=""></div>
+<!-- google analytics -->
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments);
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-	<script>
-		(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function() {
-				(i[r].q = i[r].q || []).push(arguments);
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m);
-		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'TODO');
+    ga('send', 'pageview');
+</script>
 
-		ga('create', 'UA-XXXXX-X');
-		ga('send', 'pageview');
-	</script>
+<!-- all scripts here are merged into vendor.js -->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="lib/auto/angular/angular.js"></script>
+<script src="lib/auto/angular-resource/angular-resource.js"></script>
+<script src="lib/auto/angular-cookies/angular-cookies.js"></script>
+<script src="lib/auto/angular-sanitize/angular-sanitize.js"></script>
+<script src="lib/auto/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="lib/auto/angular-animate/angular-animate.js"></script>
+<script src="lib/auto/angular-toastr/dist/angular-toastr.js"></script>
+<script src="lib/auto/catiline/dist/catiline.js"></script>
+<script src="lib/auto/angular-ui-router/release/angular-ui-router.js"></script>
+<!-- endbower -->
+<!--<script src="lib/manual/sample/sample.js"></script>-->
+<!--<script src="lib/modified/sample/sample.js"></script>-->
+<!-- endbuild -->
 
-	<!--[if lt IE 9]>
-    <script src="lib/auto/es5-shim/es5-shim.js"></script>
-    <script src="lib/auto/json3/lib/json3.min.js"></script>
-    <![endif]-->
-
-	<!-- TODO load this asynchronously from the service (check how it was done for d3Service)
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkSBn_jL8zdkPagEAFAPbNNTnINhBXj7Q&v=3.exp&sensor=false&callback=onGoogleMapsReady"></script> -->
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkSBn_jL8zdkPagEAFAPbNNTnINhBXj7Q&v=3.exp&sensor=false"></script>
-
-	<!-- build:js scripts/vendor.js -->
-	<!-- bower:js -->
-	<script src="lib/auto/angular/angular.js"></script>
-	<script src="lib/auto/angular-resource/angular-resource.js"></script>
-	<script src="lib/auto/angular-cookies/angular-cookies.js"></script>
-	<script src="lib/auto/angular-sanitize/angular-sanitize.js"></script>
-	<script src="lib/auto/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-	<script src="lib/auto/angular-animate/angular-animate.js"></script>
-	<script src="lib/auto/angular-toastr/dist/angular-toastr.js"></script>
-	<script src="lib/auto/catiline/dist/catiline.js"></script>
-	<script src="lib/auto/angular-ui-router/release/angular-ui-router.js"></script>
-	<script src="lib/auto/angular-ui-utils/ui-utils.js"></script>
-	<script src="lib/auto/angular-ui-map/ui-map.js"></script>
-	<!-- endbower -->
-
-	<!-- TODO load this from cdn and asynchronous? (check d3Service) -->
-	<script src="lib/d3.min.js"></script>
-	<script src="lib/d3.layout.cloud.js"></script>
-	<script src="lib/parallax.min.js"></script>
-	<!-- TODO modified init and constructor to receive a scene and assign it as documentElement and body -->
-	<script src="lib/skrollr.min.js"></script>
-	<!-- endbuild -->
-
-	<!-- build:js({.tmp,app}) scripts/scripts.js -->
-	<script src="scripts/app.js"></script>
-	<script src="scripts/controllers/async.js"></script>
-	<script src="scripts/controllers/hosts.js"></script>
-	<script src="scripts/controllers/main.js"></script>
-	<script src="scripts/controllers/main/config.js"></script>
-	<script src="scripts/controllers/main/home.js"></script>
-	<script src="scripts/controllers/main/map.js"></script>
-	<script src="scripts/controllers/main/stats.js"></script>
-	<script src="scripts/controllers/main/timeline.js"></script>
-	<script src="scripts/controllers/main/words.js"></script>
-	<script src="scripts/controllers/oauth.js"></script>
-	<script src="scripts/directives/d3.bars.js"></script>
-	<script src="scripts/directives/d3.words.js"></script>
-	<script src="scripts/directives/parallax.js"></script>
-	<script src="scripts/directives/skrollr.js"></script>
-	<script src="scripts/logic/clients/GoogleClient.js"></script>
-	<script src="scripts/logic/models/Album.js"></script>
-	<script src="scripts/logic/models/Collection.js"></script>
-	<script src="scripts/logic/models/Media.js"></script>
-	<script src="scripts/logic/models/MediaContent.js"></script>
-	<script src="scripts/logic/models/MediaLocation.js"></script>
-	<script src="scripts/services/async.js"></script>
-	<script src="scripts/services/clients.js"></script>
-	<script src="scripts/services/data.js"></script>
-	<script src="scripts/services/d3.js"></script>
-	<script src="scripts/services/parallax.js"></script>
-	<script src="scripts/services/skrollr.js"></script>
-	<!-- endbuild -->
+<!-- all scripts here are merged into scripts.js -->
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/logic/models/MediaLocation.js"></script>
+<!-- endbuild -->
 </body>
 </html>

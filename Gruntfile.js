@@ -133,8 +133,8 @@ module.exports = function(grunt) {
 				ignorePath: '<%= yeoman.app %>/'
 			},
 			sass: {
-				src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-				ignorePath: '<%= yeoman.app %>/lib/auto/'
+				src: ['<%= yeoman.app %>/styles/{,*/}*.scss'],
+				ignorePath: '<%= yeoman.app %>/lib/'
 			}
 		},
 
@@ -147,7 +147,7 @@ module.exports = function(grunt) {
 				imagesDir: '<%= yeoman.app %>/images',
 				javascriptsDir: '<%= yeoman.app %>/scripts',
 				fontsDir: '<%= yeoman.app %>/styles/fonts',
-				importPath: '<%= yeoman.app %>/lib/auto',
+				importPath: '<%= yeoman.app %>/lib',
 				httpImagesPath: '/images',
 				httpGeneratedImagesPath: '/images/generated',
 				httpFontsPath: '/styles/fonts',
@@ -366,11 +366,6 @@ module.exports = function(grunt) {
 		}
 
 		grunt.task.run(['clean:server', 'bowerInstall', 'concurrent:server', 'autoprefixer', 'connect:livereload', 'watch']);
-	});
-
-	grunt.registerTask('server', function(target) {
-		grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-		grunt.task.run(['serve:' + target]);
 	});
 
 	grunt.registerTask('test', ['clean:server', 'concurrent:test', 'autoprefixer', 'connect:test', 'karma']);
