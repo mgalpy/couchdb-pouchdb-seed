@@ -1,20 +1,21 @@
 {
-    "name": "TODO",
-    "private": true,
-    "dependencies": {
-        "angular": "*",
-        "angular-animate": "*",
-        "angular-bootstrap": "*",
-        "angular-cookies": "*",
-        "angular-resource": "*",
-        "angular-sanitize": "*",
-        "angular-toastr": "*",
-        "angular-ui-router": "*",
-        "catiline": "*",
-        "karma-jasmine": "*"
-    },
-    "devDependencies": {
-        "angular-mocks": "*",
-        "angular-scenario": "*"
-    }
+  "name": "TODO",
+  "private": true,
+  "dependencies": {
+    "angular": "*",
+    "angular-animate": "*",
+    "angular-bootstrap": "*",
+    "angular-cookies": "*",
+    "angular-resource": "*",
+    "angular-sanitize": "*",
+    "angular-toastr": "*",
+    "angular-ui-router": "*",
+    "catiline": "*",
+    "karma-jasmine": "*",
+    "angular-pouchdb": "~0.1.5"
+  },
+  "devDependencies": {
+    "angular-mocks": "*",
+    "angular-scenario": "*"
+  }
 }
