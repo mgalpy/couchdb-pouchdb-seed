@@ -1,30 +1,21 @@
-<nav id="leftBar">
-	<ul>
-		<li ui-sref-active="active"><a ui-sref="main.home"><span
-				class="glyphicon glyphicon-info-sign" popover="About this project"
-				popover-append-to-body="true" popover-placement="right"
-				popover-trigger="mouseenter"></span> </a></li>
-		<li ui-sref-active="active"><a ui-sref="main.map"><span
-				class="glyphicon glyphicon-map-marker" popover="Around the world"
-				popover-append-to-body="true" popover-placement="right"
-				popover-trigger="mouseenter"></span> </a></li>
-		<li ui-sref-active="active"><a ui-sref="main.timeline"><span
-				class="glyphicon glyphicon-time" popover="Time travel"
-				popover-append-to-body="true" popover-placement="right"
-				popover-trigger="mouseenter"></span> </a></li>
-		<li ui-sref-active="active"><a ui-sref="main.words"><span
-				class="glyphicon glyphicon-tag" popover="Hashtopics"
-				popover-append-to-body="true" popover-placement="right"
-				popover-trigger="mouseenter"></span> </a></li>
-		<li ui-sref-active="active"><a ui-sref="main.stats"><span
-				class="glyphicon glyphicon-signal" popover="Some nice stats"
-				popover-append-to-body="true" popover-placement="right"
-				popover-trigger="mouseenter"></span> </a></li>
-		<li ui-sref-active="active"><a ui-sref="main.config"><span
-				class="glyphicon glyphicon-cog" popover="Choose a collection"
-				popover-append-to-body="true" popover-placement="right"
-				popover-trigger="mouseenter"></span> </a></li>
-	</ul>
-</nav>
+<div id="mainHeader">
+    <h1>Header</h1>
+    <ul>
+        <li ui-sref-active="active">
+            <a ui-sref="main.home">
+                <span class="glyphicon glyphicon-info-sign" popover="Home" popover-append-to-body="true" popover-placement="right" popover-trigger="mouseenter"></span>
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a ui-sref="main.config">
+                <span class="glyphicon glyphicon-cog" popover="Preferences" popover-append-to-body="true" popover-placement="right" popover-trigger="mouseenter"></span>
+            </a>
+        </li>
+    </ul>
+</div>
 
 <div id="mainContent" ui-view></div>
+
+<div id="mainFooter">
+    <h1>Footer</h1>
+</div>

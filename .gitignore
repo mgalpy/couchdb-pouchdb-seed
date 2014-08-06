@@ -5,4 +5,5 @@
 /app/scripts/logic/**/*.js
 /app/scripts/logic/**/*.js.map
 /app/styles/**/*.css
+/dist
 /node_modules

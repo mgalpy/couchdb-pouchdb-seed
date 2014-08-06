@@ -26,26 +26,9 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="noalbumsApp">
+<body ng-app="TODO_angularSeedApp">
 <!-- main view -->
 <div id="indexContent" ui-view=""></div>
-
-<!-- google analytics -->
-<script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments);
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'TODO');
-    ga('send', 'pageview');
-</script>
 
 <!-- all scripts here are merged into vendor.js -->
 <!-- build:js scripts/vendor.js -->
@@ -69,7 +52,10 @@
 <!-- all scripts here are merged into scripts.js -->
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
-<script src="scripts/logic/models/MediaLocation.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/main/config.js"></script>
+<script src="scripts/controllers/main/home.js"></script>
+<script src="scripts/logic/models/SampleObject.js"></script>
 <!-- endbuild -->
 </body>
 </html>
